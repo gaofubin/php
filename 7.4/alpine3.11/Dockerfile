@@ -1,5 +1,7 @@
 FROM php:7.4.13-fpm-alpine3.11
 
+MAINTAINER all is well
+
 # 修改系统源为阿里云
 RUN echo 'http://mirrors.aliyun.com/alpine/v3.11/main' > /etc/apk/repositories \
     && echo 'http://mirrors.aliyun.com/alpine/v3.11/community' >> /etc/apk/repositories \
